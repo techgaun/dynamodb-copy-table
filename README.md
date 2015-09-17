@@ -24,5 +24,5 @@ $ AWS_DEFAULT_REGION=us-east-1 DISABLE_DATACOPY=yes python dynamodb-copy-table.p
 
 ### References
 
-[Import and Export DynamoDB Data using AWS Data Pipeline](http://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-importexport-ddb.html)
-[Original script](https://gist.github.com/iomz/9774415) - had to modify and add support for tables with only hash key
+- [Import and Export DynamoDB Data using AWS Data Pipeline](http://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-importexport-ddb.html)
+- [Original script](https://gist.github.com/iomz/9774415) - had to modify and add support for tables with only hash key
