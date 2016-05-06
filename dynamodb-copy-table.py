@@ -84,6 +84,7 @@ for item in logs.scan():
             continue
         new_item[f] = item[f]
     try:
+        new_logs.use_boolean()
         new_logs.put_item(new_item, overwrite=True)
     except ValidationException:
         print dst_table, new_item
