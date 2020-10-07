@@ -28,6 +28,25 @@ $ AWS_DEFAULT_REGION=us-east-1 DISABLE_CREATION=yes DISABLE_DATACOPY=yes \
 python dynamodb-copy-table.py src_table dst_table
 ```
 
+#### Docker Image
+
+The docker image is available as [techgaun/dynamodb-copy-table:latest](https://hub.docker.com/r/techgaun/dynamodb-copy-table)
+in the official docker hub that you can pull from.
+
+Usage:
+
+```shell
+# pull image down
+docker pull techgaun/dynamodb-copy-table:latest
+
+# invoke help
+$ docker run --rm -it techgaun/dynamodb-copy-table:latest
+Usage: dynamodb-copy-table.py <source_table_name> <destination_table_name>
+
+# invoke copy
+docker run -e AWS_ACCESS_KEY_ID=abc -e AWS_SECRET_ACCESS_KEY=def --rm -it techgaun/dynamodb-copy-table:latest src dest
+```
+
 ### References
 
 - [Import and Export DynamoDB Data using AWS Data Pipeline](http://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-importexport-ddb.html)
