@@ -6,7 +6,7 @@ A simple python 3 script to copy dynamodb table
 ### Requirements
 
 - Python 3.x
-- boto (`pip install boto`)
+- boto3 (`pip install boto3`)
 
 ### Usage
 
@@ -20,6 +20,8 @@ The following environment variables can be used:
 Variable | Purpose
 --- | ---
 `AWS_DEFAULT_REGION` | Select the region (the default region is `us-west-2`)
+`AWS_SRC_REGION` | Select the source table region (the default region is AWS_DEFAULT_REGION)
+`AWS_DST_REGION` | Select the destination table region (the default region is AWS_DEFAULT_REGION)
 `DISABLE_CREATION` | Disable the creation of a new table (Useful if the table already exists)
 `DISABLE_DATACOPY` | Disable the copying of data from source table to destination table
 
